@@ -1,0 +1,181 @@
+.content{
+	width: 100%;
+
+	.content-list{
+		width: 100%;
+		height: auto;
+		display: block;
+		margin-top: 71px;
+		font-family: 'Hind Siliguri';
+		@media (min-width: 768px) and (max-width: 935px) {
+		   	width: 90%;
+		   	margin: 0 auto;
+		}
+		@media (min-width: 320px) and (max-width: 767px) {
+           width: 96%;
+           margin: 0 auto;
+        }
+		.content-item{
+			@include display-p;
+			float: left;
+			width: 292px;
+			height: 292px;
+			margin-right: 30px;
+			margin-bottom: 30px;
+			line-height: 0;
+			&:nth-child(3n){
+				margin-right: 0;
+				@media (min-width: 768px) and (max-width: 935px) {
+				   	width: 42%;
+				   	margin-right: 4%;
+				   	margin-left: 4%;
+					margin-bottom: 10%;
+					height: auto;
+	    		}
+	    		@media (min-width: 320px) and (max-width: 767px) {
+                   	width: 65%;
+              		float: none;
+              		margin: 5% auto;
+              		height: auto;
+
+                }
+			}
+			@media (min-width: 768px) and (max-width: 935px) {
+			   	width: 42%;
+			   	margin-right:4%;
+			   	margin-left: 4%;
+				margin-bottom: 10%;
+				height: auto;
+	    	}
+	    	@media (min-width: 320px) and (max-width: 767px) {
+              	width: 65%;
+              	float: none;
+              	margin: 3% auto;
+              	height: auto;
+            }
+			.content-container{
+				width:100%;
+				height: 100%;
+				position: relative;
+				font-size: 17px;
+				@media (min-width: 768px) and (max-width: 935px) {
+				   	width: 100%;
+				   	height: auto;
+		    	}
+				.upload-img{
+					@include display-p;
+					width: 100%;
+					height: 100%;
+					@media (min-width: 768px) and (max-width: 935px) {
+						   	width: 100%;
+						   	height: auto;
+				    	}
+					.dark-background {
+	    				background: rgba(0,0,0,0.5);
+	    				width:100%;  
+	    				height:100%;
+	    				position: absolute; 
+	    				top:0;
+	    				@media (min-width: 768px) and (max-width: 935px) {
+						   	width: 100%;
+				    	}
+				    	@media (min-width: 320px) and (max-width: 767px) {
+		                   width: 100%;
+		                }
+	    			}
+	    			img{
+	    				@media (min-width: 768px) and (max-width: 935px) {
+						   	width: 100%;
+						   	height: auto;
+				    	}
+				    	@media (min-width: 320px) and (max-width: 767px) {
+		                   width: 100%;
+		                   height: auto;
+		                }
+	    			}
+				}
+				.main-statistic{
+					width: 100%;
+					display: flex;
+					justify-content: space-around;
+					position: absolute;
+					bottom: 30px;
+					color: #ffffff;
+					line-height: 1;
+					ul{
+						@include display-p;
+						float: left;
+						li{
+							display: block;
+							width: auto;
+
+						}
+					}
+					li{
+						margin-bottom: 22px;
+					}
+					.like-item, .message-item{
+						.statistic-img, .quantity{
+							display: inline-block;
+							vertical-align: middle;
+							margin:0 3px 0 0;
+						}
+					}
+					.like-list, .message-list{
+						font-family: 'Hind Siliguri';
+						font-weight: 600;
+					}
+				}
+
+				.upload-date{
+					width: 100%;
+					display: block;
+					position: absolute;
+					text-align: center;
+					bottom: 14px;
+					color: #ffffff;
+					z-index: 100;
+					line-height: 1;
+				}
+			}
+			.video{
+				position: absolute;
+				top: 15px;
+				right: 12px;
+			}
+		}
+		.block-4, .block-5, .block-6, .block-7, .block-8, .block-9{
+			.content-container{
+				.main-statistic{
+				bottom: 84px;
+				}
+			}	
+		}
+	}
+	.load-more-button{
+		width: auto;
+		display: block;
+		margin-top: 14px;
+		@media (min-width: 768px) and (max-width: 935px) {
+		   	clear: both;
+    	}
+		button{
+			display: block;
+		    padding: 9px 29px 10px;
+		    color: #000000;
+		    font-size: 12px;
+		    margin: 0 auto;
+		    text-transform: uppercase;
+		    background: #ffffff;
+		    border: 1px solid #000000;
+		    border-radius: 23px;
+		    cursor: pointer;
+		    &:hover{
+			background: #00a69c;
+			border: 1px solid #00a69c;
+			color: #ffffff;
+			transition: all 0.2s ease-in-out;
+			}
+		}	
+	}
+}

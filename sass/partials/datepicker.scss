@@ -1,0 +1,27 @@
+body{
+	.ui-widget-header{
+		border: none;
+	    background: #ffffff;
+	    color: #333333;
+	    font-weight: normal;
+	}
+	.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled {
+     	border: 1px solid #ffffff; 
+     	background: #ffffff; 
+    	font-weight: normal;
+     	color: #454545;
+     	&:hover{
+     		border: 1px solid #4090db; 
+	     	background: #4090db; 
+	    	font-weight: normal;
+	     	color: #000000; 
+	     	border-radius: 3px;
+     	}
+    }
+    .ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+	    border: 1px solid #4090db;
+	    background: #4090db;
+	    color: #ffffff;
+	    border-radius: 3px;
+	}
+}
